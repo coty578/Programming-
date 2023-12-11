@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         
         // Declare and create Product array of size 5
-        ProductInterface[] pa = new Product[5];
+        ProductInterface[] pa = new Product[7];
         
         // Create object instances and assign them to
         // the type of Product.
@@ -19,6 +19,8 @@ public class Main {
         pa[2] = new MP3Player(250, "Apple", "blue");
         pa[3] = new Book(34, "Sun press", 1992);
         pa[4] = new Book(15, "Korea press", 1986);
+        pa[5] = new ChildrenBook(15, "Pee Wee press", 1987, 8);
+        pa[6] = new Cartoon(14, "Pee Wee press", 1924, "Batman");
         
         // Compute total regular price and total
         // sale price.

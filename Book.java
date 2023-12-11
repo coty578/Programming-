@@ -1,7 +1,7 @@
 
 package myonlineshopusinginterface;
 
-public class Book extends Product {
+public class Book extends Product implements BookInterface{
     
     private String publisher;
     private int yearPublished;
