@@ -1,5 +1,5 @@
 
-package myonlineshop;
+package myonlineshopusinginterface;
 
 public class TV extends Electronics {
     
@@ -13,7 +13,7 @@ public class TV extends Electronics {
         this.size = size;
     }
     
-    // Implement the abstract method
+    // Override the method
     public double computeSalePrice(){
         return super.getRegularPrice() * 0.8;
     }

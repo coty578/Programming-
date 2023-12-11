@@ -1,7 +1,7 @@
 
-package myonlineshop;
+package myonlineshopusinginterface;
 
-public abstract class Electronics extends Product{
+public class Electronics extends Product implements ElectronicsInterface {
     
     private String manufacturer;
     
@@ -19,5 +19,4 @@ public abstract class Electronics extends Product{
     public void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
     }
-    
 }

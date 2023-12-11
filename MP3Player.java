@@ -1,5 +1,5 @@
 
-package myonlineshop;
+package myonlineshopusinginterface;
 
 public class MP3Player extends Electronics{
     
@@ -12,7 +12,7 @@ public class MP3Player extends Electronics{
         this.color = color;
     }
     
-    // Implement the abstract method
+    // Override the method
     public double computeSalePrice(){
         return super.getRegularPrice() * 0.9;
     }

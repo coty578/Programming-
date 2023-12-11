@@ -1,7 +1,7 @@
 
-package myonlineshop;
+package myonlineshopusinginterface;
 
-public class Book extends Product{
+public class Book extends Product {
     
     private String publisher;
     private int yearPublished;
@@ -15,7 +15,7 @@ public class Book extends Product{
         this.yearPublished = yearPublished;
     }
     
-    // Implement the abstract method
+    // Override the method
     public double computeSalePrice(){
         return super.getRegularPrice() * 0.5;
     }

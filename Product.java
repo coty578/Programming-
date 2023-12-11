@@ -1,7 +1,7 @@
 
-package myonlineshop;
+package myonlineshopusinginterface;
 
-public abstract class Product {
+public class Product implements ProductInterface{
     
     private double regularPrice;
     
@@ -10,15 +10,22 @@ public abstract class Product {
         this.regularPrice = regularPrice;
     }
     
-    // Abstract method
-    public abstract double computeSalePrice();
-
+    // Implement the methods of the ProductInterface
+    public double computeSalePrice(){
+        return 0;
+    }
+    
     public double getRegularPrice() {
         return regularPrice;
     }
-
+    
     public void setRegularPrice(double regularPrice) {
         this.regularPrice = regularPrice;
     }
     
 }
+
+
+
+
+
