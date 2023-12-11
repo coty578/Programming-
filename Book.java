@@ -2,10 +2,10 @@
 package myonlineshop;
 
 public class Book extends Product{
-   
+    
     private String publisher;
     private int yearPublished;
-   
+    
     /** Creates a new instance of Book */
     public Book(double regularPrice,
             String publisher,
@@ -14,26 +14,26 @@ public class Book extends Product{
         this.publisher = publisher;
         this.yearPublished = yearPublished;
     }
-   
-    // Override this method
+    
+    // Implement the abstract method
     public double computeSalePrice(){
         return super.getRegularPrice() * 0.5;
     }
-   
+    
     public String getPublisher() {
         return publisher;
     }
-   
+    
     public void setPublisher(String publisher) {
         this.publisher = publisher;
     }
-   
+    
     public int getYearPublished() {
         return yearPublished;
     }
-   
+    
     public void setYearPublished(int yearPublished) {
         this.yearPublished = yearPublished;
     }
-   
+    
 }

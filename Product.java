@@ -1,18 +1,17 @@
+
 package myonlineshop;
 
-public class Product {
-   
+public abstract class Product {
+    
     private double regularPrice;
-   
+    
     /** Creates a new instance of Product */
     public Product(double regularPrice) {
         this.regularPrice = regularPrice;
     }
-   
-    // Method that will be overridden
-    public double computeSalePrice(){
-        return 0;
-    }
+    
+    // Abstract method
+    public abstract double computeSalePrice();
 
     public double getRegularPrice() {
         return regularPrice;
@@ -21,5 +20,5 @@ public class Product {
     public void setRegularPrice(double regularPrice) {
         this.regularPrice = regularPrice;
     }
-   
+    
 }
