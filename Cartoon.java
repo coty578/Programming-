@@ -18,4 +18,5 @@ public class Cartoon extends Book {
     public double computeSalePrice(){
         return super.getRegularPrice() * 0.4;
     }
+    
 }
